@@ -1,0 +1,554 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--background: hsl(0, 0%, 95%);
+	--font-color: white;
+	--sedans-color: hsl(31, 77%, 52%);
+	--suvs-color: hsl(184, 100%, 22%);
+	--luxury-color: hsl(179, 100%, 13%);
+}
+
+body {
+	background-color: var(--background);
+	font-family: 'Lexend Deca';
+	font-size: 15px;
+	padding: 100px;
+	margin: 250px;
+}
+
+.main {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	margin: auto 200px;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	background: var(--sedans-color);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-family: 'Lexend Deca';
+	padding: 1rem;
+	width: 20%;
+}
+
+.sedans-logo {
+	position: relative;
+	size: 10px;
+	padding: 1.5rem;
+}
+
+.sedans-logo img {
+	position: relative;
+	width: 45px;
+}
+
+.left h1 {
+	position: relative;
+	bottom: 5%;
+	font-family: 'Big Shoulders Display';
+	font-size: 30px;
+	color: var(--background);
+	padding: 1.5rem;
+}
+
+.article1 {
+	position: relative;
+	bottom: 12%;
+	font-size: 12px;
+	line-height: 1.5;
+	color: white;
+	opacity: .5;
+	padding: 20px;
+}
+
+.sedan-button {
+	position: relative;
+	background-color: var(--background);
+	border-radius: 28px;
+	border: var(--background);
+	display: inline-block;
+	color: var(--sedans-color);
+	font-family: 'Lexend Deca';
+	font-size: 12px;
+	padding: 10px;
+	margin-left: 16px;
+	width: 105px;
+	bottom: 20px;
+}
+
+.middle {
+	display: flex;
+	flex-direction: column;
+	background: var(--suvs-color);
+	font-family: 'Lexend Deca';
+	padding: 1rem;
+	width: 21%;
+}
+
+.suvs-logo {
+	position: relative;
+	size: 10px;
+	padding: 1.5rem;
+}
+
+.suvs-logo img {
+	position: relative;
+	width: 45px;
+}
+.middle h1 {
+	position: relative;
+	bottom: 5%;
+	font-family: 'Big Shoulders Display';
+	font-size: 30px;
+	color: var(--background);
+	padding: 1.5rem;
+}
+
+.article2 {
+	position: relative;
+	bottom: 12%;
+	font-size: 12px;
+	line-height: 1.5;
+	color: white;
+	opacity: .5;
+	padding: 20px;
+}
+
+.suvs-button {
+	position: relative;
+	background-color: var(--background);
+	border-radius: 28px;
+	border: var(--background);
+	display: inline-block;
+	color: var(--suvs-color);
+	font-family: 'Lexend Deca';
+	font-size: 12px;
+	padding: 10px;
+	margin-left: 16px;
+	width: 105px;
+	bottom: 20px;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	background: var(--luxury-color);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-family: 'Lexend Deca';
+	padding: 1rem;
+	width: 21%;
+}
+
+.luxury-logo {
+	position: relative;
+	size: 10px;
+	padding: 1.5rem;
+}
+
+.luxury-logo img {
+	position: relative;
+	width: 45px;
+}
+.right h1 {
+	position: relative;
+	bottom: 5%;
+	font-family: 'Big Shoulders Display';
+	font-size: 30px;
+	color: var(--background);
+	padding: 1.5rem;
+}
+
+.article3 {
+	position: relative;
+	bottom: 12%;
+	font-size: 12px;
+	line-height: 1.5;
+	color: white;
+	opacity: .5;
+	padding: 20px;
+}
+
+.luxury-button {
+	position: relative;
+	background-color: var(--background);
+	border-radius: 28px;
+	border: var(--background);
+	display: inline-block;
+	color: var(--luxury-color);
+	font-family: 'Lexend Deca';
+	font-size: 12px;
+	padding: 10px;
+	margin-left: 16px;
+	width: 105px;
+	bottom: 20px;
+}
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+	body {
+		background-color: var(--background);
+		font-family: 'Lexend Deca';
+		font-size: 15px;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+	}
+
+	.left {
+		display: flex;
+		flex-direction: column;
+		background: var(--sedans-color);
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		font-family: 'Lexend Deca';
+		padding: 1rem;
+		width: 85%;
+	}
+
+	.sedans-logo {
+		position: relative;
+		padding: 20px;
+	}
+
+	.sedans-logo img {
+		position: relative;
+		width: 58px;
+	}
+
+	.left h1 {
+		position: relative;
+		top: -2ch;
+		font-family: 'Big Shoulders Display';
+		font-size: 30px;
+		color: var(--background);
+		padding: 20px;
+	}
+
+	.article1 {
+		position: relative;
+		top: -5ch;
+		font-size: 12px;
+		line-height: 1.5;
+		color: white;
+		opacity: .5;
+		padding: 20px;
+	}
+
+	.sedan-button {
+		position: relative;
+		background-color: var(--background);
+		border-radius: 28px;
+		border: var(--background);
+		display: inline-block;
+		color: var(--sedans-color);
+		font-family: 'Lexend Deca';
+		font-size: 12px;
+		padding: 14px;
+		margin-left: 16px;
+		width: 124px;
+		bottom: 20px;
+	}
+
+	.middle {
+		display: flex;
+		flex-direction: column;
+		background: var(--suvs-color);
+		font-family: 'Lexend Deca';
+		padding: 1rem;
+		width: 85%;
+	}
+
+	.suvs-logo {
+		position: relative;
+		padding: 20px;
+	}
+
+	.suvs-logo img {
+		position: relative;
+		width: 58px;
+	}
+
+	.middle h1 {
+		position: relative;
+		top: -2ch;
+		font-family: 'Big Shoulders Display';
+		font-size: 30px;
+		color: var(--background);
+		padding: 20px;
+	}
+
+	.article2 {
+		position: relative;
+		top: -5ch;
+		font-size: 12px;
+		line-height: 1.5;
+		color: white;
+		opacity: .5;
+		padding: 20px;
+	}
+
+	.suv-button {
+		position: relative;
+		background-color: var(--suvs-color);
+		border-radius: 28px;
+		border: var(--background);
+		display: inline-block;
+		color: var(--suvs-color);
+		font-family: 'Lexend Deca';
+		font-size: 12px;
+		padding: 14px;
+		margin-left: 16px;
+		width: 124px;
+		bottom: 20px;
+	}
+
+	.right {
+		display: flex;
+		flex-direction: column;
+		background: var(--luxury-color);
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		font-family: 'Lexend Deca';
+		padding: 1rem;
+		width: 85%;
+	}
+
+	.luxury-logo {
+		position: relative;
+		padding: 20px;
+	}
+
+	.luxury-logo img {
+		position: relative;
+		width: 58px;
+	}
+
+	.right h1 {
+		position: relative;
+		top: -2ch;
+		font-family: 'Big Shoulders Display';
+		font-size: 30px;
+		color: var(--background);
+		padding: 20px;
+	}
+
+	.article3 {
+		position: relative;
+		top: -5ch;
+		font-size: 12px;
+		line-height: 1.5;
+		color: white;
+		opacity: .5;
+		padding: 20px;
+	}
+
+	.luxury-button {
+		position: relative;
+		background-color: var(--background);
+		border-radius: 28px;
+		border: var(--background);
+		display: inline-block;
+		color: var(--luxury-color);
+		font-family: 'Lexend Deca';
+		font-size: 12px;
+		padding: 14px;
+		margin-left: 16px;
+		width: 124px;
+		bottom: 20px;
+	}
+}
+
+/* iPad */
+
+@media screen and (max-width: 768px) {
+	body {
+		background-color: var(--background);
+		font-family: 'Lexend Deca';
+		font-size: 15px;
+		padding: 100px;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		padding: 139px;
+		margin: auto;
+	}
+
+	.left {
+		display: flex;
+		flex-direction: column;
+		background: var(--sedans-color);
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		font-family: 'Lexend Deca';
+		padding: 1rem;
+		width: 85%;
+	}
+
+	.sedans-logo {
+		position: relative;
+		padding: 20px;
+	}
+
+	.sedans-logo img {
+		position: relative;
+		width: 58px;
+	}
+
+	.left h1 {
+		position: relative;
+		top: -2ch;
+		font-family: 'Big Shoulders Display';
+		font-size: 30px;
+		color: var(--background);
+		padding: 20px;
+	}
+
+	.article1 {
+		position: relative;
+		top: -5ch;
+		font-size: 12px;
+		line-height: 1.5;
+		color: white;
+		opacity: .5;
+		padding: 20px;
+	}
+
+	.sedan-button {
+		position: relative;
+		background-color: var(--background);
+		border-radius: 28px;
+		border: var(--background);
+		display: inline-block;
+		color: var(--sedans-color);
+		font-family: 'Lexend Deca';
+		font-size: 12px;
+		padding: 14px;
+		margin-left: 16px;
+		width: 124px;
+		bottom: 20px;
+	}
+
+	.middle {
+		display: flex;
+		flex-direction: column;
+		background: var(--suvs-color);
+		font-family: 'Lexend Deca';
+		padding: 1rem;
+		width: 85%;
+	}
+
+	.suvs-logo {
+		position: relative;
+		padding: 20px;
+	}
+
+	.suvs-logo img {
+		position: relative;
+		width: 58px;
+	}
+
+	.middle h1 {
+		position: relative;
+		top: -2ch;
+		font-family: 'Big Shoulders Display';
+		font-size: 30px;
+		color: var(--background);
+		padding: 20px;
+	}
+
+	.article2 {
+		position: relative;
+		top: -5ch;
+		font-size: 12px;
+		line-height: 1.5;
+		color: white;
+		opacity: .5;
+		padding: 20px;
+	}
+
+	.suv-button {
+		position: relative;
+		background-color: var(--suvs-color);
+		border-radius: 28px;
+		border: var(--background);
+		display: inline-block;
+		color: var(--suvs-color);
+		font-family: 'Lexend Deca';
+		font-size: 12px;
+		padding: 14px;
+		margin-left: 16px;
+		width: 124px;
+		bottom: 20px;
+	}
+
+	.right {
+		display: flex;
+		flex-direction: column;
+		background: var(--luxury-color);
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		font-family: 'Lexend Deca';
+		padding: 1rem;
+		width: 85%;
+	}
+
+	.luxury-logo {
+		position: relative;
+		padding: 20px;
+	}
+
+	.luxury-logo img {
+		position: relative;
+		width: 58px;
+	}
+
+	.right h1 {
+		position: relative;
+		top: -2ch;
+		font-family: 'Big Shoulders Display';
+		font-size: 30px;
+		color: var(--background);
+		padding: 20px;
+	}
+
+	.article3 {
+		position: relative;
+		top: -5ch;
+		font-size: 12px;
+		line-height: 1.5;
+		color: white;
+		opacity: .5;
+		padding: 20px;
+	}
+
+	.luxury-button {
+		position: relative;
+		background-color: var(--background);
+		border-radius: 28px;
+		border: var(--background);
+		display: inline-block;
+		color: var(--luxury-color);
+		font-family: 'Lexend Deca';
+		font-size: 12px;
+		padding: 14px;
+		margin-left: 16px;
+		width: 124px;
+		bottom: 20px;
+	}
+}
